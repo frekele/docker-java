@@ -2,8 +2,7 @@ FROM frekele/debian:stable
 
 MAINTAINER frekele <leandro.freitas@softdevelop.com.br>
 
-# set environment variables for program versions
-# Use Java CPU (8u91) NOT use PSU (8u92).
+# Set environment variables for program versions
 ENV JDK_VERSION=8
 ENV JDK_UPDATE=102
 ENV JDK_BUILD=b14
