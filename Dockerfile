@@ -18,6 +18,9 @@ ENV JAVA_HOME=/opt/java
 ENV JRE_SECURITY_FOLDER=$JAVA_HOME/jre/lib/security
 ENV SSL_TRUSTED_CERTS_FOLDER=/opt/ssl/trusted
 
+ENV JCE_MD5_CHECKSUM=b3c7031bc65c28c2340302065e7d00d3
+ENV JCE_SHA1_CHECKSUM=7d25dcee3e6ef2c984d748a14614b37c18ce3507
+
 # Change to tmp folder
 WORKDIR /tmp
 
@@ -48,9 +51,7 @@ RUN echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERS
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256
 
 # Download zip file with java cryptography extension and unzip to jre security folder
-RUN export JCE_MD5_CHECKSUM='b3c7031bc65c28c2340302065e7d00d3' \
-    && export JCE_SHA1_CHECKSUM='7d25dcee3e6ef2c984d748a14614b37c18ce3507' \
-    && wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/$JDK_VERSION/jce_policy-$JDK_VERSION.zip \
+RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/$JDK_VERSION/jce_policy-$JDK_VERSION.zip \
     && echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
     && echo "${JCE_SHA1_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | sha1sum -c \
     && unzip jce_policy-$JDK_VERSION.zip \
