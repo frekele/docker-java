@@ -36,7 +36,7 @@ RUN grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" $
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
         | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $2 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5
+        | awk '{ print $4 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5
         
 RUN echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
     && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | sha256sum -c \
