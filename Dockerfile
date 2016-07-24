@@ -51,13 +51,18 @@ RUN echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERS
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256
 
 # Download zip file with java cryptography extension and unzip to jre security folder
-RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/$JDK_VERSION/jce_policy-$JDK_VERSION.zip \
-    && echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
+RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/jce_policy-${JDK_VERSION}.zip
+
+RUN md5sum jce_policy-${JDK_VERSION}.zip
+
+RUN sha1sum jce_policy-${JDK_VERSION}.zip
+
+RUN echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
     && echo "${JCE_SHA1_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | sha1sum -c \
-    && unzip jce_policy-$JDK_VERSION.zip \
-    && cp $JCE_FOLDER/*.jar $JRE_SECURITY_FOLDER \
-    && rm -f jce_policy-$JDK_VERSION.zip \
-    && rm -rf $JCE_FOLDER
+    && unzip jce_policy-${JDK_VERSION}.zip \
+    && cp ${JCE_FOLDER}/*.jar ${JRE_SECURITY_FOLDER} \
+    && rm -f jce_policy-${JDK_VERSION}.zip \
+    && rm -rf ${JCE_FOLDER}
     
 # Add executables to path
 RUN update-alternatives --install "/usr/bin/java" "java" "/opt/java/bin/java" 1 && \
