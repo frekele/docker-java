@@ -67,6 +67,28 @@ Repository: https://hub.docker.com/r/frekele/java
  - https://github.com/just-containers/s6-overlay
 
 
-[master]: https://github.com/frekele/docker-java/blob/master/Dockerfile
-[master]: https://github.com/frekele/docker-java/blob/master/Dockerfile
-[master]: https://github.com/frekele/docker-java/blob/master/Dockerfile
+[jdk8u102]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u101]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u92]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u91]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u77]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u74]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u73]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u72]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u71]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u66]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u65]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u60]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u51]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u45]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u40]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u31]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk8u25]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u80]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u79]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u76]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u75]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u72]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdk7u71]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+[jdkdev]: https://github.com/frekele/docker-java/blob/xxxxx/Dockerfile
+
