@@ -33,7 +33,7 @@ Repository: https://hub.docker.com/r/frekele/java
 #### JRE Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jre8u102]            | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre                      |
+| [jre8u102]            | frekele/debian:stable    | Production   | jre8u102, jre8,                                |
 | [jre8u101]            | frekele/debian:stable    | Production   | jre8u101                                       |
 | [jre8u92]             | frekele/debian:stable    | Production   | jre8u92                                        |
 | [jre8u91]             | frekele/debian:stable    | Production   | jre8u91                                        |
