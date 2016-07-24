@@ -24,7 +24,8 @@ Repository: https://hub.docker.com/r/frekele/java
 | [jdk7u75]             | frekele/debian:stable    | Production   | jdk7u75, 7u75                                  |
 | [jdk7u72]             | frekele/debian:stable    | Production   | jdk7u72, 7u72                                  |
 | [jdk7u71]             | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
-| [jdkdev]              | frekele/debian:stable    | Development  | jdkdev                                         |
+| [jdk8dev]             | frekele/debian:stable    | Development  | jdk7dev                                        |
+| [jdk7dev]             | frekele/debian:stable    | Development  | jdk8dev                                        |
 
 # Dockerfile extends From:
 - https://github.com/frekele/docker-debian
