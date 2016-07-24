@@ -33,7 +33,7 @@ Repository: https://hub.docker.com/r/frekele/java
 #### JRE Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jre8u102u]           | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre                     |
+| [jre8u102]            | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre                      |
 | [jre8u101]            | frekele/debian:stable    | Production   | jre8u101                                       |
 | [jre8u92]             | frekele/debian:stable    | Production   | jre8u92                                        |
 | [jre8u91]             | frekele/debian:stable    | Production   | jre8u91                                        |
@@ -91,4 +91,29 @@ Repository: https://hub.docker.com/r/frekele/java
 [jdk7u72]: https://github.com/frekele/docker-java/blob/jdk7u72/Dockerfile
 [jdk7u71]: https://github.com/frekele/docker-java/blob/jdk7u71/Dockerfile
 [jdkdev]: https://github.com/frekele/docker-java/blob/jdkdev/Dockerfile
+
+[jre8u102]: https://github.com/frekele/docker-java/blob/jre8u102/Dockerfile
+[jre8u101]: https://github.com/frekele/docker-java/blob/jre8u101/Dockerfile
+[jre8u92]: https://github.com/frekele/docker-java/blob/jre8u92/Dockerfile
+[jre8u91]: https://github.com/frekele/docker-java/blob/jre8u91/Dockerfile
+[jre8u77]: https://github.com/frekele/docker-java/blob/jre8u77/Dockerfile
+[jre8u74]: https://github.com/frekele/docker-java/blob/jre8u74/Dockerfile
+[jre8u73]: https://github.com/frekele/docker-java/blob/jre8u73/Dockerfile
+[jre8u72]: https://github.com/frekele/docker-java/blob/jre8u72/Dockerfile
+[jre8u71]: https://github.com/frekele/docker-java/blob/jre8u71/Dockerfile
+[jre8u66]: https://github.com/frekele/docker-java/blob/jre8u66/Dockerfile
+[jre8u65]: https://github.com/frekele/docker-java/blob/jre8u65/Dockerfile
+[jre8u60]: https://github.com/frekele/docker-java/blob/jre8u60/Dockerfile
+[jre8u51]: https://github.com/frekele/docker-java/blob/jre8u51/Dockerfile
+[jre8u45]: https://github.com/frekele/docker-java/blob/jre8u45/Dockerfile
+[jre8u40]: https://github.com/frekele/docker-java/blob/jre8u40/Dockerfile
+[jre8u31]: https://github.com/frekele/docker-java/blob/jre8u31/Dockerfile
+[jre8u25]: https://github.com/frekele/docker-java/blob/jre8u25/Dockerfile
+[jre7u80]: https://github.com/frekele/docker-java/blob/jre7u80/Dockerfile
+[jre7u79]: https://github.com/frekele/docker-java/blob/jre7u79/Dockerfile
+[jre7u76]: https://github.com/frekele/docker-java/blob/jre7u76/Dockerfile
+[jre7u75]: https://github.com/frekele/docker-java/blob/jre7u75/Dockerfile
+[jre7u72]: https://github.com/frekele/docker-java/blob/jre7u72/Dockerfile
+[jre7u71]: https://github.com/frekele/docker-java/blob/jre7u71/Dockerfile
+[jredev]: https://github.com/frekele/docker-java/blob/jredev/Dockerfile
 
