@@ -22,8 +22,17 @@ Repository: https://hub.docker.com/r/frekele/java
 | [jdk8u40]             | frekele/debian:stable    | Production   | jdk8u40, 8u40                      |
 | [jdk8u31]             | frekele/debian:stable    | Production   | jdk8u31, 8u31                      |
 | [jdk8u25]             | frekele/debian:stable    | Production   | jdk8u25, 8u25                      |
-| [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx, jdk7, 7             |
+| [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7             |
+| [jdk7u79]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7u76]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7u75]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7u71]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
 | [jdkdev]              | frekele/debian:stable    | Development  | jdkdev                             |
 
 
