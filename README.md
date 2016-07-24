@@ -117,7 +117,8 @@ Repository: https://hub.docker.com/r/frekele/java
 [jre7u71]: https://github.com/frekele/docker-java/blob/jre7u71/Dockerfile
 [jredev]: https://github.com/frekele/docker-java/blob/jredev/Dockerfile
 
-Run Java container with the trusted SSL certificates:
+
+## Run Java container with the trusted SSL certificates:
 ````
-docker run --rm -v /opt/ssl/trusted:/opt/ssl/trusted --name java frekele/java
+docker run --rm -v /mnt/vol-ssl/trusted:/opt/ssl/trusted --name java frekele/java
 ````
