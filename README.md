@@ -33,30 +33,30 @@ Repository: https://hub.docker.com/r/frekele/java
 #### JRE Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jre8u102] (latest)   | frekele/debian:stable    | Production   | jre8u102, 8u102, jre8, 8, latest-jre, latest   |
-| [jre8u101]            | frekele/debian:stable    | Production   | jre8u101, 8u101                                |
-| [jre8u92]             | frekele/debian:stable    | Production   | jre8u92, 8u92                                  |
-| [jre8u91]             | frekele/debian:stable    | Production   | jre8u91, 8u91                                  |
-| [jre8u77]             | frekele/debian:stable    | Production   | jre8u77, 8u77                                  |
-| [jre8u74]             | frekele/debian:stable    | Production   | jre8u74, 8u74                                  |
-| [jre8u73]             | frekele/debian:stable    | Production   | jre8u73, 8u73                                  |
-| [jre8u72]             | frekele/debian:stable    | Production   | jre8u72, 8u72                                  |
-| [jre8u71]             | frekele/debian:stable    | Production   | jre8u71, 8u71                                  |
-| [jre8u66]             | frekele/debian:stable    | Production   | jre8u66, 8u66                                  |
-| [jre8u65]             | frekele/debian:stable    | Production   | jre8u65, 8u65                                  |
-| [jre8u60]             | frekele/debian:stable    | Production   | jre8u60, 8u60                                  |
-| [jre8u51]             | frekele/debian:stable    | Production   | jre8u51, 8u51                                  |
-| [jre8u45]             | frekele/debian:stable    | Production   | jre8u45, 8u45                                  |
-| [jre8u40]             | frekele/debian:stable    | Production   | jre8u40, 8u40                                  |
-| [jre8u31]             | frekele/debian:stable    | Production   | jre8u31, 8u31                                  |
-| [jre8u25]             | frekele/debian:stable    | Production   | jre8u25, 8u25                                  |
-| [jre7u80]             | frekele/debian:stable    | Production   | jre7u80, 7u80, jre7, 7                         |
-| [jre7u79]             | frekele/debian:stable    | Production   | jre7u79, 7u79                                  |
-| [jre7u76]             | frekele/debian:stable    | Production   | jre7u76, 7u76                                  |
-| [jre7u75]             | frekele/debian:stable    | Production   | jre7u75, 7u75                                  |
-| [jre7u72]             | frekele/debian:stable    | Production   | jre7u72, 7u72                                  |
-| [jre7u71]             | frekele/debian:stable    | Production   | jre7u71, 7u71                                  |
-| [jredev]              | frekele/debian:stable    | Development  | jredev                                         |
+| [jre8u102] (latest)   | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre              |
+| [jre8u101]            | frekele/debian:stable    | Production   | jre8u101                                |
+| [jre8u92]             | frekele/debian:stable    | Production   | jre8u92                                  |
+| [jre8u91]             | frekele/debian:stable    | Production   | jre8u91                                  |
+| [jre8u77]             | frekele/debian:stable    | Production   | jre8u77                                  |
+| [jre8u74]             | frekele/debian:stable    | Production   | jre8u74                                  |
+| [jre8u73]             | frekele/debian:stable    | Production   | jre8u73                                  |
+| [jre8u72]             | frekele/debian:stable    | Production   | jre8u72                                  |
+| [jre8u71]             | frekele/debian:stable    | Production   | jre8u71                                  |
+| [jre8u66]             | frekele/debian:stable    | Production   | jre8u66                                  |
+| [jre8u65]             | frekele/debian:stable    | Production   | jre8u65                                  |
+| [jre8u60]             | frekele/debian:stable    | Production   | jre8u60                                  |
+| [jre8u51]             | frekele/debian:stable    | Production   | jre8u51                                  |
+| [jre8u45]             | frekele/debian:stable    | Production   | jre8u45                                  |
+| [jre8u40]             | frekele/debian:stable    | Production   | jre8u40                                  |
+| [jre8u31]             | frekele/debian:stable    | Production   | jre8u31                                  |
+| [jre8u25]             | frekele/debian:stable    | Production   | jre8u25                                  |
+| [jre7u80]             | frekele/debian:stable    | Production   | jre7u80, jre7                            |
+| [jre7u79]             | frekele/debian:stable    | Production   | jre7u79                                  |
+| [jre7u76]             | frekele/debian:stable    | Production   | jre7u76                                  |
+| [jre7u75]             | frekele/debian:stable    | Production   | jre7u75                                  |
+| [jre7u72]             | frekele/debian:stable    | Production   | jre7u72                                  |
+| [jre7u71]             | frekele/debian:stable    | Production   | jre7u71                                  |
+| [jredev]              | frekele/debian:stable    | Development  | jredev                                   |
 
 
 # Dockerfile extends From:
