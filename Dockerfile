@@ -24,7 +24,7 @@ WORKDIR /tmp
 # Download and extract jdk to opt folder
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
     && wget --no-check-certificate --no-cookies https://www.oracle.com/webfolder/s/digest/${JDK_VERSION_UPDATE}checksum.html \
-    grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
+    && grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
         | sed 's/\(<tr>\|<\/tr>\)//g' \
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
@@ -35,10 +35,10 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acc
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
         | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $4 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
+        | awk '{ print $2 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
     && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
     && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | sha256sum -c \
-    tar -zvxf jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz -C /opt \
+    && tar -zvxf jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz -C /opt \
     && ln -s /opt/${JDK_FOLDER} /opt/java \
     && rm -f ${JDK_VERSION_UPDATE}checksum.html \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
