@@ -54,8 +54,8 @@ Repository: https://hub.docker.com/r/frekele/java
 [jdk7u75]: https://github.com/frekele/docker-java/blob/jdk7u75/Dockerfile
 [jdk7u72]: https://github.com/frekele/docker-java/blob/jdk7u72/Dockerfile
 [jdk7u71]: https://github.com/frekele/docker-java/blob/jdk7u71/Dockerfile
-[jdkdev]: https://github.com/frekele/docker-java/blob/jdkdev/Dockerfile
-
+[jdk8dev]: https://github.com/frekele/docker-java/blob/jdk8dev/Dockerfile
+[jdk7dev]: https://github.com/frekele/docker-java/blob/jdk7dev/Dockerfile
 
 ## Run Java container with the trusted SSL certificates:
 ````
