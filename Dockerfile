@@ -31,13 +31,13 @@ RUN grep -o '<tr><td>jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz</td>.*</tr>' ${J
         | sed 's/\(<tr>\|<\/tr>\)//g' \
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
-        | sed 's/\(jdk-8u102-linux-i586.tar.gz\)//g' \
+        | sed 's/\(jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz\)//g' \
         | awk '{ print $2 }' > jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz.sha256 \
     && grep -o '<tr><td>jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz</td>.*</tr>' ${JDK_VERSION_UPDATE}checksum.html \
         | sed 's/\(<tr>\|<\/tr>\)//g' \
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
-        | sed 's/\(jdk-8u102-linux-i586.tar.gz\)//g' \
+        | sed 's/\(jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz\)//g' \
         | awk '{ print $4 }' > jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz.md5
 
 RUN echo "$(cat jdk-$JDK_VERSION_UPDATE_DISTRO_ARCH.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
