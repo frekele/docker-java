@@ -5,7 +5,7 @@ Repository: https://hub.docker.com/r/frekele/java
 #### JDK Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jdk8u102] (latest)   | frekele/debian:stable    | Production   | jdk8u102, 8u102, jdk8, 8, latest-jdk, latest   |
+| [jdk8u102u] (latest)   | frekele/debian:stable    | Production   | jdk8u102, 8u102, jdk8, 8, latest-jdk, latest   |
 | [jdk8u101]            | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
 | [jdk8u92]             | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
 | [jdk8u91]             | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
@@ -33,7 +33,7 @@ Repository: https://hub.docker.com/r/frekele/java
 #### JRE Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jre8u102] (latest)   | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre              |
+| [jre8u102u] (latest)   | frekele/debian:stable    | Production   | jre8u102, jre8, latest-jre              |
 | [jre8u101]            | frekele/debian:stable    | Production   | jre8u101                                |
 | [jre8u92]             | frekele/debian:stable    | Production   | jre8u92                                  |
 | [jre8u91]             | frekele/debian:stable    | Production   | jre8u91                                  |
