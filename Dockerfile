@@ -44,8 +44,6 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acc
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256
-    
-
 
 # Download zip file with java cryptography extension and unzip to jre security folder
 RUN export JCE_MD5_CHECKSUM='b3c7031bc65c28c2340302065e7d00d3' \
@@ -58,6 +56,13 @@ RUN export JCE_MD5_CHECKSUM='b3c7031bc65c28c2340302065e7d00d3' \
     && rm -f jce_policy-$JDK_VERSION.zip \
     && rm -rf $JCE_FOLDER
     
+# Add executables to path
+RUN update-alternatives --install "/usr/bin/java" "java" "/opt/java/bin/java" 1 && \
+    update-alternatives --set "java" "/opt/java/bin/java" && \
+    update-alternatives --install "/usr/bin/javac" "javac" "/opt/java/bin/javac" 1 && \
+    update-alternatives --set "javac" "/opt/java/bin/javac" && \
+    update-alternatives --install "/usr/bin/keytool" "keytool" "/opt/java/bin/keytool" 1 && \
+    update-alternatives --set "keytool" "/opt/java/bin/keytool"
 
 # Create trusted ssl certs folder
 RUN mkdir -p $SSL_TRUSTED_CERTS_FOLDER
