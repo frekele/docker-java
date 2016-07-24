@@ -18,10 +18,6 @@ Repository: https://hub.docker.com/r/frekele/java
 | [jdk8u65]             | frekele/debian:stable    | Production   | jdk8u65, 8u65                                  |
 | [jdk8u60]             | frekele/debian:stable    | Production   | jdk8u60, 8u60                                  |
 | [jdk8u51]             | frekele/debian:stable    | Production   | jdk8u51, 8u51                                  |
-| [jdk8u45]             | frekele/debian:stable    | Production   | jdk8u45, 8u45                                  |
-| [jdk8u40]             | frekele/debian:stable    | Production   | jdk8u40, 8u40                                  |
-| [jdk8u31]             | frekele/debian:stable    | Production   | jdk8u31, 8u31                                  |
-| [jdk8u25]             | frekele/debian:stable    | Production   | jdk8u25, 8u25                                  |
 | [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7                         |
 | [jdk7u79]             | frekele/debian:stable    | Production   | jdk7u79, 7u79                                  |
 | [jdk7u76]             | frekele/debian:stable    | Production   | jdk7u76, 7u76                                  |
@@ -51,10 +47,6 @@ Repository: https://hub.docker.com/r/frekele/java
 [jdk8u65]: https://github.com/frekele/docker-java/blob/jdk8u65/Dockerfile
 [jdk8u60]: https://github.com/frekele/docker-java/blob/jdk8u60/Dockerfile
 [jdk8u51]: https://github.com/frekele/docker-java/blob/jdk8u51/Dockerfile
-[jdk8u45]: https://github.com/frekele/docker-java/blob/jdk8u45/Dockerfile
-[jdk8u40]: https://github.com/frekele/docker-java/blob/jdk8u40/Dockerfile
-[jdk8u31]: https://github.com/frekele/docker-java/blob/jdk8u31/Dockerfile
-[jdk8u25]: https://github.com/frekele/docker-java/blob/jdk8u25/Dockerfile
 [jdk7u80]: https://github.com/frekele/docker-java/blob/jdk7u80/Dockerfile
 [jdk7u79]: https://github.com/frekele/docker-java/blob/jdk7u79/Dockerfile
 [jdk7u76]: https://github.com/frekele/docker-java/blob/jdk7u76/Dockerfile
