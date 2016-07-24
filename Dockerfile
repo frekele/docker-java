@@ -18,8 +18,8 @@ ENV JAVA_HOME=/opt/java
 ENV JRE_SECURITY_FOLDER=$JAVA_HOME/jre/lib/security
 ENV SSL_TRUSTED_CERTS_FOLDER=/opt/ssl/trusted
 
-ENV JCE_MD5_CHECKSUM=b3c7031bc65c28c2340302065e7d00d3
-ENV JCE_SHA1_CHECKSUM=7d25dcee3e6ef2c984d748a14614b37c18ce3507
+ENV JCE_MD5_CHECKSUM=81ee08846975d4b8d46acf3b6eddf103
+ENV JCE_SHA1_CHECKSUM=43eabe42bb8d6e8dfe33f3a815f265ac5d5bb586
 
 # Change to tmp folder
 WORKDIR /tmp
@@ -55,7 +55,7 @@ RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/
 
 RUN md5sum jce_policy-${JDK_VERSION}.zip
 
-RUN sha1sum jce_policy-${JDK_VERSION}.zip
+RUN sha256sum jce_policy-${JDK_VERSION}.zip
 
 RUN echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
     && echo "${JCE_SHA1_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | sha1sum -c \
