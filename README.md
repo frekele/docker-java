@@ -1,8 +1,8 @@
-# Java Docker Image - Extends frekele/debian
+# Oracle Java Docker Image - Extends frekele/debian
 
 Repository: https://hub.docker.com/r/frekele/java
 
-#### JDK Branches:
+#### Oracle JDK Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
 | [jdk8u102] - latest   | frekele/debian:stable    | Production   | jdk8u102, 8u102, jdk8, 8, latest               |
@@ -30,7 +30,7 @@ Repository: https://hub.docker.com/r/frekele/java
 | [jdk7u71]             | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
 | [jdkdev]              | frekele/debian:stable    | Development  | jdkdev                                         |
 
-#### JRE Branches:
+#### Oracle JRE Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
 | [jre8u102]            | frekele/debian:stable    | Production   | jre8u102, jre8,                                |
