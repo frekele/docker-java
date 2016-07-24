@@ -23,16 +23,11 @@ Repository: https://hub.docker.com/r/frekele/java
 | [jdk8u31]             | frekele/debian:stable    | Production   | jdk8u31, 8u31                      |
 | [jdk8u25]             | frekele/debian:stable    | Production   | jdk8u25, 8u25                      |
 | [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7             |
-| [jdk7u79]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7u76]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7u75]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7u71]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
-| [jdk7uxx]             | frekele/debian:stable    | Production   | jdk7uxx, 7uxx                      |
+| [jdk7u79]             | frekele/debian:stable    | Production   | jdk7uxx, 7u79                      |
+| [jdk7u76]             | frekele/debian:stable    | Production   | jdk7uxx, 7u76                      |
+| [jdk7u75]             | frekele/debian:stable    | Production   | jdk7uxx, 7u75                      |
+| [jdk7u72]             | frekele/debian:stable    | Production   | jdk7uxx, 7u72                      |
+| [jdk7u71]             | frekele/debian:stable    | Production   | jdk7uxx, 7u71                      |
 | [jdkdev]              | frekele/debian:stable    | Development  | jdkdev                             |
 
 
