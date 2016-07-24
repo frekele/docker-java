@@ -19,46 +19,31 @@ ENV JRE_SECURITY_FOLDER=$JAVA_HOME/jre/lib/security
 ENV SSL_TRUSTED_CERTS_FOLDER=/opt/ssl/trusted
 
 ENV JCE_MD5_CHECKSUM=81ee08846975d4b8d46acf3b6eddf103
-ENV JCE_SHA1_CHECKSUM=43eabe42bb8d6e8dfe33f3a815f265ac5d5bb586
 
 # Change to tmp folder
 WORKDIR /tmp
 
 # Download and extract jdk to opt folder
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
-    && wget --no-check-certificate --no-cookies https://www.oracle.com/webfolder/s/digest/${JDK_VERSION_UPDATE}checksum.html
-    
-RUN grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
-        | sed 's/\(<tr>\|<\/tr>\)//g' \
-        | sed 's/\(<td>\|<\/td>\)//g' \
-        | sed 's/\(<br>\|<\/br>\)//g' \
-        | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $2 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256 \
+    && wget --no-check-certificate --no-cookies https://www.oracle.com/webfolder/s/digest/${JDK_VERSION_UPDATE}checksum.html \
     && grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
         | sed 's/\(<tr>\|<\/tr>\)//g' \
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
         | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $4 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5
-        
-RUN echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
-    && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | sha256sum -c \
+        | awk '{ print $4 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
+    && md5sum jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
+    && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
     && tar -zvxf jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz -C /opt \
     && ln -s /opt/${JDK_FOLDER} /opt/java \
     && rm -f ${JDK_VERSION_UPDATE}checksum.html \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
-    && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
-    && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.sha256
+    && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5
 
 # Download zip file with java cryptography extension and unzip to jre security folder
-RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/jce_policy-${JDK_VERSION}.zip
-
-RUN md5sum jce_policy-${JDK_VERSION}.zip
-
-RUN sha256sum jce_policy-${JDK_VERSION}.zip
-
-RUN echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
-    && echo "${JCE_SHA1_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | sha1sum -c \
+RUN wget --no-check-certificate --no-cookies http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/jce_policy-${JDK_VERSION}.zip \
+    && md5sum jce_policy-${JDK_VERSION}.zip \
+    && echo "${JCE_MD5_CHECKSUM} jce_policy-${JDK_VERSION}.zip" | md5sum -c \
     && unzip jce_policy-${JDK_VERSION}.zip \
     && cp ${JCE_FOLDER}/*.jar ${JRE_SECURITY_FOLDER} \
     && rm -f jce_policy-${JDK_VERSION}.zip \
