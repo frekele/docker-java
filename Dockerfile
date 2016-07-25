@@ -8,7 +8,7 @@ ENV JDK_UPDATE=80
 ENV JDK_BUILD=b15
 ENV JDK_DISTRO_ARCH=linux-x64
 
-ENV JCE_FOLDER=UnlimitedJCEPolicyJDK$JDK_VERSION
+ENV JCE_FOLDER=UnlimitedJCEPolicy
 ENV JDK_FOLDER=jdk1.$JDK_VERSION.0_$JDK_UPDATE
 ENV JDK_VERSION_UPDATE=$JDK_VERSION'u'$JDK_UPDATE
 ENV JDK_VERSION_UPDATE_BUILD=$JDK_VERSION_UPDATE'-'$JDK_BUILD
@@ -40,10 +40,10 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acc
 
 # Download zip file with java cryptography extension and unzip to jre security folder
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/jce_policy-${JDK_VERSION}.zip \
-    && unzip jce_policy-${JDK_VERSION}.zip \
+       http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
+    && unzip UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
     && cp ${JCE_FOLDER}/*.jar ${JRE_SECURITY_FOLDER} \
-    && rm -f jce_policy-${JDK_VERSION}.zip \
+    && rm -f UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
     && rm -rf ${JCE_FOLDER}
     
 # Add executables to path
