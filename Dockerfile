@@ -4,7 +4,7 @@ MAINTAINER frekele <leandro.freitas@softdevelop.com.br>
 
 # Set environment variables for program versions
 ENV JDK_VERSION=7
-ENV JDK_UPDATE=80
+ENV JDK_UPDATE=79
 ENV JDK_BUILD=b15
 ENV JDK_DISTRO_ARCH=linux-x64
 
