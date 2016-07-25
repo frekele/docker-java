@@ -30,7 +30,7 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acc
         | sed 's/\(<td>\|<\/td>\)//g' \
         | sed 's/\(<br>\|<\/br>\)//g' \
         | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $4 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
+        | awk '{ print $1 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
     && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
     && tar -zvxf jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz -C /opt \
     && ln -s /opt/${JDK_FOLDER} /opt/java \
