@@ -1,4 +1,4 @@
-# Oracle Java Docker Image - Extends frekele/debian
+# Oracle Java (s6-overlay) Docker Image - Extends frekele/debian
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/frekele/java.svg)](https://hub.docker.com/r/frekele/java/)
 [![Docker Stars](https://img.shields.io/docker/stars/frekele/java.svg)](https://hub.docker.com/r/frekele/java/)
