@@ -41,34 +41,15 @@ Repository: https://hub.docker.com/r/frekele/java
  - https://github.com/just-containers/s6-overlay
 
 
-[jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
-[jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
-[jdk8u92]: https://github.com/frekele/docker-java/blob/jdk8u92/Dockerfile
-[jdk8u91]: https://github.com/frekele/docker-java/blob/jdk8u91/Dockerfile
-[jdk8u77]: https://github.com/frekele/docker-java/blob/jdk8u77/Dockerfile
-[jdk8u74]: https://github.com/frekele/docker-java/blob/jdk8u74/Dockerfile
-[jdk8u73]: https://github.com/frekele/docker-java/blob/jdk8u73/Dockerfile
-[jdk8u72]: https://github.com/frekele/docker-java/blob/jdk8u72/Dockerfile
-[jdk8u71]: https://github.com/frekele/docker-java/blob/jdk8u71/Dockerfile
-[jdk8u66]: https://github.com/frekele/docker-java/blob/jdk8u66/Dockerfile
-[jdk8u65]: https://github.com/frekele/docker-java/blob/jdk8u65/Dockerfile
-[jdk8u60]: https://github.com/frekele/docker-java/blob/jdk8u60/Dockerfile
-[jdk8u51]: https://github.com/frekele/docker-java/blob/jdk8u51/Dockerfile
-[jdk7u80]: https://github.com/frekele/docker-java/blob/jdk7u80/Dockerfile
-[jdk7u79]: https://github.com/frekele/docker-java/blob/jdk7u79/Dockerfile
-[jdk7u76]: https://github.com/frekele/docker-java/blob/jdk7u76/Dockerfile
-[jdk7u75]: https://github.com/frekele/docker-java/blob/jdk7u75/Dockerfile
-[jdk7u72]: https://github.com/frekele/docker-java/blob/jdk7u72/Dockerfile
-[jdk7u71]: https://github.com/frekele/docker-java/blob/jdk7u71/Dockerfile
-[jdk8dev]: https://github.com/frekele/docker-java/blob/jdk8dev/Dockerfile
-[jdk7dev]: https://github.com/frekele/docker-java/blob/jdk7dev/Dockerfile
-
 ## Run Java container with the trusted SSL certificates:
 ````
 docker run --rm -v /mnt/vol-ssl/trusted:/opt/ssl/trusted --name java frekele/java
 ````
 
+
 ### License:
+See [ORACLE LICENSE]
+
 frekele/docker-java is **licensed** under the **[MIT License]**. The terms of the license are as follows:
 
     The MIT License (MIT)
@@ -92,3 +73,26 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+
+[jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
+[jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
+[jdk8u92]: https://github.com/frekele/docker-java/blob/jdk8u92/Dockerfile
+[jdk8u91]: https://github.com/frekele/docker-java/blob/jdk8u91/Dockerfile
+[jdk8u77]: https://github.com/frekele/docker-java/blob/jdk8u77/Dockerfile
+[jdk8u74]: https://github.com/frekele/docker-java/blob/jdk8u74/Dockerfile
+[jdk8u73]: https://github.com/frekele/docker-java/blob/jdk8u73/Dockerfile
+[jdk8u72]: https://github.com/frekele/docker-java/blob/jdk8u72/Dockerfile
+[jdk8u71]: https://github.com/frekele/docker-java/blob/jdk8u71/Dockerfile
+[jdk8u66]: https://github.com/frekele/docker-java/blob/jdk8u66/Dockerfile
+[jdk8u65]: https://github.com/frekele/docker-java/blob/jdk8u65/Dockerfile
+[jdk8u60]: https://github.com/frekele/docker-java/blob/jdk8u60/Dockerfile
+[jdk8u51]: https://github.com/frekele/docker-java/blob/jdk8u51/Dockerfile
+[jdk7u80]: https://github.com/frekele/docker-java/blob/jdk7u80/Dockerfile
+[jdk7u79]: https://github.com/frekele/docker-java/blob/jdk7u79/Dockerfile
+[jdk7u76]: https://github.com/frekele/docker-java/blob/jdk7u76/Dockerfile
+[jdk7u75]: https://github.com/frekele/docker-java/blob/jdk7u75/Dockerfile
+[jdk7u72]: https://github.com/frekele/docker-java/blob/jdk7u72/Dockerfile
+[jdk7u71]: https://github.com/frekele/docker-java/blob/jdk7u71/Dockerfile
+[jdk8dev]: https://github.com/frekele/docker-java/blob/jdk8dev/Dockerfile
+[jdk7dev]: https://github.com/frekele/docker-java/blob/jdk7dev/Dockerfile
+[ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
