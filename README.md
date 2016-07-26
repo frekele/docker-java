@@ -77,6 +77,7 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 
 
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+[MIT LICENSE]: https://github.com/frekele/docker-java/blob/dev/LICENSE
 [jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
 [jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
 [jdk8u92]: https://github.com/frekele/docker-java/blob/jdk8u92/Dockerfile
