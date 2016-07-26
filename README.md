@@ -7,9 +7,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/frekele/docker-java.svg)](https://github.com/frekele/docker-java/stargazers)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://frekele.github.io/docker-java/)
 
-Site: https://frekele.github.io/docker-java/
+[![Java Image][JavaImage]][JavaWebsite]
 
-Repository: https://hub.docker.com/r/frekele/java
+| [Website]  | [GitHub]  | [DockerHub]  |
+
 
 #### Oracle JDK Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
@@ -78,9 +79,14 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
     SOFTWARE.
 
 
-
+[JavaImage]: https://raw.githubusercontent.com/frekele/docker-java/jdk8dev/java-logo.png
+[JavaWebsite]: http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html
+[Website]: https://frekele.github.io/docker-java
+[GitHub]: https://github.com/frekele/docker-java
+[DockerHub]: https://hub.docker.com/r/frekele/java
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-[MIT LICENSE]: https://github.com/frekele/docker-java/blob/dev/LICENSE
+[MIT LICENSE]: https://github.com/frekele/docker-java/blob/jdk8dev/LICENSE
+
 [jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
 [jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
 [jdk8u92]: https://github.com/frekele/docker-java/blob/jdk8u92/Dockerfile
