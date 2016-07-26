@@ -5,6 +5,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/frekele/docker-java.svg)](https://github.com/frekele/docker-java/issues)
 [![GitHub forks](https://img.shields.io/github/forks/frekele/docker-java.svg)](https://github.com/frekele/docker-java/network)
 [![GitHub stars](https://img.shields.io/github/stars/frekele/docker-java.svg)](https://github.com/frekele/docker-java/stargazers)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://frekele.github.io/docker-java/)
+
+Site: https://frekele.github.io/docker-java/
 
 Repository: https://hub.docker.com/r/frekele/java
 
