@@ -15,7 +15,9 @@
 #### Oracle JDK Branches:
 | Branch                | From                     | Usage        | Tag Names                                      |
 | --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jdk8u102] - latest   | frekele/debian:stable    | Production   | jdk8u102, 8u102, jdk8, 8, latest               |
+| [jdk8u112] - latest   | frekele/debian:stable    | Production   | jdk8u112, 8u112, jdk8, 8, latest               |
+| [jdk8u111]            | frekele/debian:stable    | Production   | jdk8u111, 8u111                                |
+| [jdk8u102]            | frekele/debian:stable    | Production   | jdk8u102, 8u102                                |
 | [jdk8u101]            | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
 | [jdk8u92]             | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
 | [jdk8u91]             | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
