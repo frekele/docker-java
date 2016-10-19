@@ -43,7 +43,7 @@
 ## Which Java version should I choose: the CPU or the PSU?
 Oracle strongly recommends that all Java SE users upgrade to the latest CPU release available for a release family. Most users should choose the CPU release.
 
-Users should only use the corresponding PSU release if they are being impacted by one of the additional bugs fixed in that version as noted in the release notes.
+*Users should only use the corresponding PSU release if they are being impacted by one of the additional bugs fixed in that version as noted in the release notes.*
 
 The subsequent CPU release will contain all of the fixes from the current PSU. For this reason, organizations should test the current PSU in their environment in anticipation of these fixes being included in the next CPU.
 
