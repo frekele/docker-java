@@ -13,31 +13,31 @@
 
 
 #### Oracle JDK Branches:
-| Branch                | From                     | Usage        | Tag Names                                      |
-| --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jdk8u112] - latest   | frekele/debian:stable    | Production   | jdk8u112, 8u112, jdk8, 8, latest               |
-| [jdk8u111]            | frekele/debian:stable    | Production   | jdk8u111, 8u111                                |
-| [jdk8u102]            | frekele/debian:stable    | Production   | jdk8u102, 8u102                                |
-| [jdk8u101]            | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
-| [jdk8u92]             | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
-| [jdk8u91]             | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
-| [jdk8u77]             | frekele/debian:stable    | Production   | jdk8u77, 8u77                                  |
-| [jdk8u74]             | frekele/debian:stable    | Production   | jdk8u74, 8u74                                  |
-| [jdk8u73]             | frekele/debian:stable    | Production   | jdk8u73, 8u73                                  |
-| [jdk8u72]             | frekele/debian:stable    | Production   | jdk8u72, 8u72                                  |
-| [jdk8u71]             | frekele/debian:stable    | Production   | jdk8u71, 8u71                                  |
-| [jdk8u66]             | frekele/debian:stable    | Production   | jdk8u66, 8u66                                  |
-| [jdk8u65]             | frekele/debian:stable    | Production   | jdk8u65, 8u65                                  |
-| [jdk8u60]             | frekele/debian:stable    | Production   | jdk8u60, 8u60                                  |
-| [jdk8u51]             | frekele/debian:stable    | Production   | jdk8u51, 8u51                                  |
-| [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7                         |
-| [jdk7u79]             | frekele/debian:stable    | Production   | jdk7u79, 7u79                                  |
-| [jdk7u76]             | frekele/debian:stable    | Production   | jdk7u76, 7u76                                  |
-| [jdk7u75]             | frekele/debian:stable    | Production   | jdk7u75, 7u75                                  |
-| [jdk7u72]             | frekele/debian:stable    | Production   | jdk7u72, 7u72                                  |
-| [jdk7u71]             | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
-| [jdk8dev]             | frekele/debian:stable    | Development  | jdk7dev                                        |
-| [jdk7dev]             | frekele/debian:stable    | Development  | jdk8dev                                        |
+| Branch                | Type  | From                     | Usage        | Tag Names                                      |
+| --------------------- | ----- | ------------------------ | ------------ | ---------------------------------------------- |
+| [jdk8u112] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u112, 8u112, jdk8, 8, latest               |
+| [jdk8u111]            | CPU   | frekele/debian:stable    | Production   | jdk8u111, 8u111                                |
+| [jdk8u102]            | PSU   | frekele/debian:stable    | Production   | jdk8u102, 8u102                                |
+| [jdk8u101]            | CPU   | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
+| [jdk8u92]             | PSU   | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
+| [jdk8u91]             | CPU   | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
+| [jdk8u77]             | CPU   | frekele/debian:stable    | Production   | jdk8u77, 8u77                                  |
+| [jdk8u74]             | PSU   | frekele/debian:stable    | Production   | jdk8u74, 8u74                                  |
+| [jdk8u73]             | CPU   | frekele/debian:stable    | Production   | jdk8u73, 8u73                                  |
+| [jdk8u72]             | PSU   | frekele/debian:stable    | Production   | jdk8u72, 8u72                                  |
+| [jdk8u71]             | CPU   | frekele/debian:stable    | Production   | jdk8u71, 8u71                                  |
+| [jdk8u66]             | PSU   | frekele/debian:stable    | Production   | jdk8u66, 8u66                                  |
+| [jdk8u65]             | CPU   | frekele/debian:stable    | Production   | jdk8u65, 8u65                                  |
+| [jdk8u60]             | PSU   | frekele/debian:stable    | Production   | jdk8u60, 8u60                                  |
+| [jdk8u51]             | CPU   | frekele/debian:stable    | Production   | jdk8u51, 8u51                                  |
+| [jdk7u80]             | PSU   | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7                         |
+| [jdk7u79]             | CPU   | frekele/debian:stable    | Production   | jdk7u79, 7u79                                  |
+| [jdk7u76]             | PSU   | frekele/debian:stable    | Production   | jdk7u76, 7u76                                  |
+| [jdk7u75]             | CPU   | frekele/debian:stable    | Production   | jdk7u75, 7u75                                  |
+| [jdk7u72]             | PSU   | frekele/debian:stable    | Production   | jdk7u72, 7u72                                  |
+| [jdk7u71]             | CPU   | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
+| [jdk8dev]             | PSU   | frekele/debian:stable    | Development  | jdk7dev                                        |
+| [jdk7dev]             | PSU   | frekele/debian:stable    | Development  | jdk8dev                                        |
 
 
 # [Java CPU and PSU Releases Explained]
