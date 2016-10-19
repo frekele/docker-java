@@ -39,8 +39,8 @@
 | [jdk8dev]             | PSU   | frekele/debian:stable    | Development  | jdk7dev                                            |
 | [jdk7dev]             | PSU   | frekele/debian:stable    | Development  | jdk8dev                                            |
 
-- [Oracle JDK 8 Update Release Notes]
-- [Oracle JDK 7 Update Release Notes]
+ - [Oracle JDK 8 Update Release Notes]
+ - [Oracle JDK 7 Update Release Notes]
 
 # [Java CPU and PSU Releases Explained]
 
@@ -112,8 +112,8 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
 [MIT LICENSE]: https://github.com/frekele/docker-java/blob/jdk8dev/LICENSE
 [Java CPU and PSU Releases Explained]: http://www.oracle.com/technetwork/java/javase/cpu-psu-explained-2331472.html
-[JDK 8 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/documentation/8u-relnotes-2225394.html
-[JDK 7 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/7u-relnotes-515228.html
+[Oracle JDK 8 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/documentation/8u-relnotes-2225394.html
+[Oracle JDK 7 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/7u-relnotes-515228.html
 
 [jdk8u112]: https://github.com/frekele/docker-java/blob/jdk8u112/Dockerfile
 [jdk8u111]: https://github.com/frekele/docker-java/blob/jdk8u111/Dockerfile
