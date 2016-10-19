@@ -37,6 +37,27 @@
 | [jdk8dev]             | frekele/debian:stable    | Development  | jdk7dev                                        |
 | [jdk7dev]             | frekele/debian:stable    | Development  | jdk8dev                                        |
 
+
+# [Java CPU and PSU Releases Explained]
+
+## Which Java version should I choose: the CPU or the PSU?
+Oracle strongly recommends that all Java SE users upgrade to the latest CPU release available for a release family. Most users should choose the CPU release.
+
+Users should only use the corresponding PSU release if they are being impacted by one of the additional bugs fixed in that version as noted in the release notes.
+
+The subsequent CPU release will contain all of the fixes from the current PSU. For this reason, organizations should test the current PSU in their environment in anticipation of these fixes being included in the next CPU.
+
+## What is the difference between a Java CPU and PSU release?
+Java SE Critical Patch Updates (CPU) contain fixes to security vulnerabilities and critical bug fixes. Oracle strongly recommends that all Java SE users upgrade to the latest CPU releases as they are made available. Java SE CPU releases are odd numbered versions (i.e. 7u71, 7u65 – see more on Java SE version numbering schemes here).
+
+Java SE Patch Set Updates (PSU) contain all of fixes in the corresponding CPU, as well as additional non-critical fixes. Java PSU releases should only be used if you are being impacted by one of the additional bugs fixed in that version. The release notes call out the additional fixes available in Java SE PSU releases.
+
+## Is the cadence of CPU releases changing?
+As before, Java SE CPU releases are scheduled for release on the Tuesday closest to the 17th day of January, April, July and October under the normal Oracle Critical Patch Update schedule.
+
+Starting in October 2014 with the release of Java SE 7u71 (CPU) and Java SE 7u72 (PSU), Oracle plans to additionally release a corresponding PSU release along with each CPU release for Java SE 7. PSU releases provide organizations and developers with access to non-critical fixes in addition to the critical fixes contained in the corresponding CPU.
+
+
 # Dockerfile extends From:
 - https://github.com/frekele/docker-debian
 - https://hub.docker.com/r/frekele/debian
@@ -86,6 +107,7 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [DockerHub]: https://hub.docker.com/r/frekele/java
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
 [MIT LICENSE]: https://github.com/frekele/docker-java/blob/jdk8dev/LICENSE
+[Java CPU and PSU Releases Explained]: http://www.oracle.com/technetwork/java/javase/cpu-psu-explained-2331472.html
 
 [jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
 [jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
