@@ -13,29 +13,52 @@
 
 
 #### Oracle JDK Branches:
-| Branch                | From                     | Usage        | Tag Names                                      |
-| --------------------- | ------------------------ | ------------ | ---------------------------------------------- |
-| [jdk8u102] - latest   | frekele/debian:stable    | Production   | jdk8u102, 8u102, jdk8, 8, latest               |
-| [jdk8u101]            | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
-| [jdk8u92]             | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
-| [jdk8u91]             | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
-| [jdk8u77]             | frekele/debian:stable    | Production   | jdk8u77, 8u77                                  |
-| [jdk8u74]             | frekele/debian:stable    | Production   | jdk8u74, 8u74                                  |
-| [jdk8u73]             | frekele/debian:stable    | Production   | jdk8u73, 8u73                                  |
-| [jdk8u72]             | frekele/debian:stable    | Production   | jdk8u72, 8u72                                  |
-| [jdk8u71]             | frekele/debian:stable    | Production   | jdk8u71, 8u71                                  |
-| [jdk8u66]             | frekele/debian:stable    | Production   | jdk8u66, 8u66                                  |
-| [jdk8u65]             | frekele/debian:stable    | Production   | jdk8u65, 8u65                                  |
-| [jdk8u60]             | frekele/debian:stable    | Production   | jdk8u60, 8u60                                  |
-| [jdk8u51]             | frekele/debian:stable    | Production   | jdk8u51, 8u51                                  |
-| [jdk7u80]             | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7                         |
-| [jdk7u79]             | frekele/debian:stable    | Production   | jdk7u79, 7u79                                  |
-| [jdk7u76]             | frekele/debian:stable    | Production   | jdk7u76, 7u76                                  |
-| [jdk7u75]             | frekele/debian:stable    | Production   | jdk7u75, 7u75                                  |
-| [jdk7u72]             | frekele/debian:stable    | Production   | jdk7u72, 7u72                                  |
-| [jdk7u71]             | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
-| [jdk8dev]             | frekele/debian:stable    | Development  | jdk7dev                                        |
-| [jdk7dev]             | frekele/debian:stable    | Development  | jdk8dev                                        |
+| Branch                | Type  | From                     | Usage        | Tag Names                                      |
+| --------------------- | ----- | ------------------------ | ------------ | ---------------------------------------------- |
+| [jdk8u112] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u112, 8u112, jdk8, 8, latest               |
+| [jdk8u111]            | CPU   | frekele/debian:stable    | Production   | jdk8u111, 8u111                                |
+| [jdk8u102]            | PSU   | frekele/debian:stable    | Production   | jdk8u102, 8u102                                |
+| [jdk8u101]            | CPU   | frekele/debian:stable    | Production   | jdk8u101, 8u101                                |
+| [jdk8u92]             | PSU   | frekele/debian:stable    | Production   | jdk8u92, 8u92                                  |
+| [jdk8u91]             | CPU   | frekele/debian:stable    | Production   | jdk8u91, 8u91                                  |
+| [jdk8u77]             | CPU   | frekele/debian:stable    | Production   | jdk8u77, 8u77                                  |
+| [jdk8u74]             | PSU   | frekele/debian:stable    | Production   | jdk8u74, 8u74                                  |
+| [jdk8u73]             | CPU   | frekele/debian:stable    | Production   | jdk8u73, 8u73                                  |
+| [jdk8u72]             | PSU   | frekele/debian:stable    | Production   | jdk8u72, 8u72                                  |
+| [jdk8u71]             | CPU   | frekele/debian:stable    | Production   | jdk8u71, 8u71                                  |
+| [jdk8u66]             | PSU   | frekele/debian:stable    | Production   | jdk8u66, 8u66                                  |
+| [jdk8u65]             | CPU   | frekele/debian:stable    | Production   | jdk8u65, 8u65                                  |
+| [jdk8u60]             | PSU   | frekele/debian:stable    | Production   | jdk8u60, 8u60                                  |
+| [jdk8u51]             | CPU   | frekele/debian:stable    | Production   | jdk8u51, 8u51                                  |
+| [jdk7u80]             | PSU   | frekele/debian:stable    | Production   | jdk7u80, 7u80, jdk7, 7                         |
+| [jdk7u79]             | CPU   | frekele/debian:stable    | Production   | jdk7u79, 7u79                                  |
+| [jdk7u76]             | PSU   | frekele/debian:stable    | Production   | jdk7u76, 7u76                                  |
+| [jdk7u75]             | CPU   | frekele/debian:stable    | Production   | jdk7u75, 7u75                                  |
+| [jdk7u72]             | PSU   | frekele/debian:stable    | Production   | jdk7u72, 7u72                                  |
+| [jdk7u71]             | CPU   | frekele/debian:stable    | Production   | jdk7u71, 7u71                                  |
+| [jdk8dev]             | PSU   | frekele/debian:stable    | Development  | jdk7dev                                        |
+| [jdk7dev]             | PSU   | frekele/debian:stable    | Development  | jdk8dev                                        |
+
+
+# [Java CPU and PSU Releases Explained]
+
+## Which Java version should I choose: the CPU or the PSU?
+Oracle strongly recommends that all Java SE users upgrade to the latest CPU release available for a release family. Most users should choose the CPU release.
+
+*Users should only use the corresponding PSU release if they are being impacted by one of the additional bugs fixed in that version as noted in the release notes.*
+
+The subsequent CPU release will contain all of the fixes from the current PSU. For this reason, organizations should test the current PSU in their environment in anticipation of these fixes being included in the next CPU.
+
+## What is the difference between a Java CPU and PSU release?
+Java SE Critical Patch Updates (CPU) contain fixes to security vulnerabilities and critical bug fixes. Oracle strongly recommends that all Java SE users upgrade to the latest CPU releases as they are made available. Java SE CPU releases are odd numbered versions (i.e. 7u71, 7u65 – see more on Java SE version numbering schemes here).
+
+Java SE Patch Set Updates (PSU) contain all of fixes in the corresponding CPU, as well as additional non-critical fixes. Java PSU releases should only be used if you are being impacted by one of the additional bugs fixed in that version. The release notes call out the additional fixes available in Java SE PSU releases.
+
+## Is the cadence of CPU releases changing?
+As before, Java SE CPU releases are scheduled for release on the Tuesday closest to the 17th day of January, April, July and October under the normal Oracle Critical Patch Update schedule.
+
+Starting in October 2014 with the release of Java SE 7u71 (CPU) and Java SE 7u72 (PSU), Oracle plans to additionally release a corresponding PSU release along with each CPU release for Java SE 7. PSU releases provide organizations and developers with access to non-critical fixes in addition to the critical fixes contained in the corresponding CPU.
+
 
 # Dockerfile extends From:
 - https://github.com/frekele/docker-debian
@@ -86,7 +109,10 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [DockerHub]: https://hub.docker.com/r/frekele/java
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
 [MIT LICENSE]: https://github.com/frekele/docker-java/blob/jdk8dev/LICENSE
+[Java CPU and PSU Releases Explained]: http://www.oracle.com/technetwork/java/javase/cpu-psu-explained-2331472.html
 
+[jdk8u112]: https://github.com/frekele/docker-java/blob/jdk8u112/Dockerfile
+[jdk8u111]: https://github.com/frekele/docker-java/blob/jdk8u111/Dockerfile
 [jdk8u102]: https://github.com/frekele/docker-java/blob/jdk8u102/Dockerfile
 [jdk8u101]: https://github.com/frekele/docker-java/blob/jdk8u101/Dockerfile
 [jdk8u92]: https://github.com/frekele/docker-java/blob/jdk8u92/Dockerfile
