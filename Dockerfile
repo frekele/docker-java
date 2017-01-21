@@ -7,6 +7,7 @@ ENV JDK_VERSION=8
 ENV JDK_UPDATE=121
 ENV JDK_BUILD=b13
 ENV JDK_DISTRO_ARCH=linux-x64
+ENV JDK_URL_HASH=e9e7ea248e2c4826b92b3f075a80e441
 
 ENV JCE_FOLDER=UnlimitedJCEPolicyJDK$JDK_VERSION
 ENV JDK_FOLDER=jdk1.$JDK_VERSION.0_$JDK_UPDATE
@@ -23,7 +24,7 @@ WORKDIR /tmp
 
 # Download and extract jdk to opt folder
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jdk/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
+       http://download.oracle.com/otn-pub/java/jdk/${JDK_VERSION_UPDATE_BUILD}/${JDK_URL_HASH}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
     && wget --no-check-certificate --no-cookies https://www.oracle.com/webfolder/s/digest/${JDK_VERSION_UPDATE}checksum.html \
     && grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
         | sed 's/\(<tr>\|<\/tr>\)//g' \
