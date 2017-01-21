@@ -37,8 +37,8 @@
 | [jdk7u75]             | CPU   | frekele/debian:stable    | Production   | jdk7u75, 7u75                                      |
 | [jdk7u72]             | PSU   | frekele/debian:stable    | Production   | jdk7u72, 7u72                                      |
 | [jdk7u71]             | CPU   | frekele/debian:stable    | Production   | jdk7u71, 7u71                                      |
-| [jdk8dev]             | PSU   | frekele/debian:stable    | Development  | jdk7dev                                            |
-| [jdk7dev]             | PSU   | frekele/debian:stable    | Development  | jdk8dev                                            |
+| [jdk8dev]             | *     | frekele/debian:stable    | Development  | jdk7dev                                            |
+| [jdk7dev]             | *     | frekele/debian:stable    | Development  | jdk8dev                                            |
 
  - [Oracle JDK 8 Update Release Notes]
  - [Oracle JDK 7 Update Release Notes]
