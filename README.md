@@ -15,7 +15,8 @@
 #### Oracle JDK Branches:
 | Branch                | Type  | From                     | Usage        | Tag Names                                          |
 | --------------------- | ----- | ------------------------ | ------------ | -------------------------------------------------- |
-| [jdk8u121] - latest   | CPU   | frekele/debian:stable    | Production   | jdk8u121, 8u121, jdk8-cpu, 8-cpu, jdk8, 8, latest  |
+| [jdk8u131] - latest   | CPU   | frekele/debian:stable    | Production   | jdk8u131, 8u131, jdk8-cpu, 8-cpu, jdk8, 8, latest  |
+| [jdk8u121]            | CPU   | frekele/debian:stable    | Production   | jdk8u121, 8u121                                    |
 | [jdk8u112]            | PSU   | frekele/debian:stable    | Production   | jdk8u112, 8u112, jdk8-psu, 8-psu                   |
 | [jdk8u111]            | CPU   | frekele/debian:stable    | Production   | jdk8u111, 8u111                                    |
 | [jdk8u102]            | PSU   | frekele/debian:stable    | Production   | jdk8u102, 8u102                                    |
@@ -116,6 +117,7 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [Oracle JDK 8 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/documentation/8u-relnotes-2225394.html
 [Oracle JDK 7 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/7u-relnotes-515228.html
 
+[jdk8u131]: https://github.com/frekele/docker-java/blob/jdk8u131/Dockerfile
 [jdk8u121]: https://github.com/frekele/docker-java/blob/jdk8u121/Dockerfile
 [jdk8u112]: https://github.com/frekele/docker-java/blob/jdk8u112/Dockerfile
 [jdk8u111]: https://github.com/frekele/docker-java/blob/jdk8u111/Dockerfile
