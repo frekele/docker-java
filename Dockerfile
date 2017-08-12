@@ -1,4 +1,4 @@
-FROM frekele/debian:stable
+FROM frekele/debian:latest
 
 MAINTAINER frekele <leandro.freitas@softdevelop.com.br>
 
