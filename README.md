@@ -13,6 +13,7 @@
 
 
 #### Oracle JDK Branches:
+
 | Branch                | Type  | From                     | Usage        | Tag Names                                          |
 | --------------------- | ----- | ------------------------ | ------------ | -------------------------------------------------- |
 | [jdk8u144] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u144, 8u144, jdk8-psu, 8-psu, jdk8, 8, latest  |
