@@ -22,30 +22,21 @@ ENV SSL_TRUSTED_CERTS_FOLDER=/opt/ssl/trusted
 WORKDIR /tmp
 
 # Download and extract jdk to opt folder
-RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jdk/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
-    && wget --no-check-certificate --no-cookies https://www.oracle.com/webfolder/s/digest/${JDK_VERSION_UPDATE}checksum.html \
-    && grep -o "<tr><td>jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz</td>.*</tr>" ${JDK_VERSION_UPDATE}checksum.html \
-        | sed 's/\(<tr>\|<\/tr>\)//g' \
-        | sed 's/\(<td>\|<\/td>\)//g' \
-        | sed 's/\(<br>\|<\/br>\)//g' \
-        | sed "s/\(jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz\)//g" \
-        | awk '{ print $1 }' > jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
+RUN wget --no-check-certificate https://github.com/frekele/oracle-java/releases/download/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
+    && wget --no-check-certificate https://github.com/frekele/oracle-java/releases/download/${JDK_VERSION_UPDATE_BUILD}/jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5 \
     && echo "$(cat jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5) jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz" | md5sum -c \
     && tar -zvxf jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz -C /opt \
     && ln -s /opt/${JDK_FOLDER} /opt/java \
-    && rm -f ${JDK_VERSION_UPDATE}checksum.html \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz \
     && rm -f jdk-${JDK_VERSION_UPDATE_DISTRO_ARCH}.tar.gz.md5
 
 # Download zip file with java cryptography extension and unzip to jre security folder
-RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jce/${JDK_VERSION}/UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
+RUN wget --no-check-certificate https://github.com/frekele/oracle-java/releases/download/oracle_jce${JDK_VERSION}/UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
     && unzip UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
     && cp ${JCE_FOLDER}/*.jar ${JRE_SECURITY_FOLDER} \
     && rm -f UnlimitedJCEPolicyJDK${JDK_VERSION}.zip \
     && rm -rf ${JCE_FOLDER}
-    
+
 # Add executables to path
 RUN update-alternatives --install "/usr/bin/java" "java" "/opt/java/bin/java" 1 && \
     update-alternatives --set "java" "/opt/java/bin/java" && \
