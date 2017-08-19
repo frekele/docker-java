@@ -13,6 +13,7 @@
 
 
 #### Oracle JDK Branches:
+
 | Branch                | Type  | From                     | Usage        | Tag Names                                          |
 | --------------------- | ----- | ------------------------ | ------------ | -------------------------------------------------- |
 | [jdk8u144] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u144, 8u144, jdk8-psu, 8-psu, jdk8, 8, latest  |
@@ -40,8 +41,7 @@
 | [jdk7u75]             | CPU   | frekele/debian:stable    | Production   | jdk7u75, 7u75                                      |
 | [jdk7u72]             | PSU   | frekele/debian:stable    | Production   | jdk7u72, 7u72                                      |
 | [jdk7u71]             | CPU   | frekele/debian:stable    | Production   | jdk7u71, 7u71                                      |
-| [jdk8dev]             | *     | frekele/debian:stable    | Development  | jdk7dev                                            |
-| [jdk7dev]             | *     | frekele/debian:stable    | Development  | jdk8dev                                            |
+| [master]              | *     | frekele/debian:stable    | Development  | jdk8dev                                            |
 
  - [Oracle JDK 8 Update Release Notes]
  - [Oracle JDK 7 Update Release Notes]
@@ -72,6 +72,7 @@ Starting in October 2014 with the release of Java SE 7u71 (CPU) and Java SE 7u72
 
 ## Relations:
  - https://github.com/just-containers/s6-overlay
+ - https://github.com/frekele/oracle-java
 
 
 ## Run Java container with the trusted SSL certificates:
@@ -108,13 +109,13 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
     SOFTWARE.
 
 
-[JavaImage]: https://raw.githubusercontent.com/frekele/docker-java/jdk8dev/java-logo.png
+[JavaImage]: https://raw.githubusercontent.com/frekele/docker-java/master/java-logo.png
 [JavaWebsite]: http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html
 [Website]: https://frekele.github.io/docker-java
 [GitHub]: https://github.com/frekele/docker-java
 [DockerHub]: https://hub.docker.com/r/frekele/java
 [ORACLE LICENSE]: http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-[MIT LICENSE]: https://github.com/frekele/docker-java/blob/jdk8dev/LICENSE
+[MIT LICENSE]: https://github.com/frekele/docker-java/blob/master/LICENSE
 [Java CPU and PSU Releases Explained]: http://www.oracle.com/technetwork/java/javase/cpu-psu-explained-2331472.html
 [Oracle JDK 8 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/documentation/8u-relnotes-2225394.html
 [Oracle JDK 7 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/7u-relnotes-515228.html
@@ -144,5 +145,4 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [jdk7u75]: https://github.com/frekele/docker-java/blob/jdk7u75/Dockerfile
 [jdk7u72]: https://github.com/frekele/docker-java/blob/jdk7u72/Dockerfile
 [jdk7u71]: https://github.com/frekele/docker-java/blob/jdk7u71/Dockerfile
-[jdk8dev]: https://github.com/frekele/docker-java/blob/jdk8dev/Dockerfile
-[jdk7dev]: https://github.com/frekele/docker-java/blob/jdk7dev/Dockerfile
+[master]: https://github.com/frekele/docker-java/blob/master/Dockerfile
