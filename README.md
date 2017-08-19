@@ -72,6 +72,7 @@ Starting in October 2014 with the release of Java SE 7u71 (CPU) and Java SE 7u72
 
 ## Relations:
  - https://github.com/just-containers/s6-overlay
+ - https://github.com/frekele/oracle-java
 
 
 ## Run Java container with the trusted SSL certificates:
