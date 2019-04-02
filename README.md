@@ -95,7 +95,7 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 
     MIT License
 
-    Copyright (c) 2016-2018 @frekele<Leandro Kersting de Freitas>
+    Copyright (c) 2016-2019 @frekele<Leandro Kersting de Freitas>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
