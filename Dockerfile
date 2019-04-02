@@ -1,6 +1,6 @@
 FROM frekele/debian:stable
 
-MAINTAINER frekele <leandro.freitas@softdevelop.com.br>
+MAINTAINER frekele <leandro@frekele.org>
 
 # Set environment variables for program versions
 ENV JDK_VERSION=7
