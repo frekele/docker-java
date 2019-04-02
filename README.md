@@ -16,8 +16,8 @@
 
 | Branch                | Type  | From                     | Usage        | Tag Names                                          |
 | --------------------- | ----- | ------------------------ | ------------ | -------------------------------------------------- |
-| [jdk8u202] - latest   | CPU   | frekele/debian:stable    | Production   | jdk8u202, 8u202, jdk8-cpu, 8-cpu, jdk8, 8, latest  |
-| [jdk8u201]            | PSU   | frekele/debian:stable    | Production   | jdk8u201, 8u201, jdk8-psu, 8-psu                   |
+| [jdk8u202] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u202, 8u202, jdk8-psu, 8-psu, jdk8, 8, latest  |
+| [jdk8u201]            | CPU   | frekele/debian:stable    | Production   | jdk8u201, 8u201, jdk8-cpu, 8-cpu                   |
 | [jdk8u181]            | CPU   | frekele/debian:stable    | Production   | jdk8u181, 8u181                                    |
 | [jdk8u172]            | PSU   | frekele/debian:stable    | Production   | jdk8u172, 8u172                                    |
 | [jdk8u171]            | CPU   | frekele/debian:stable    | Production   | jdk8u171, 8u171                                    |
