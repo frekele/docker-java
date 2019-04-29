@@ -16,8 +16,10 @@
 
 | Branch                | Type  | From                     | Usage        | Tag Names                                          |
 | --------------------- | ----- | ------------------------ | ------------ | -------------------------------------------------- |
-| [jdk8u202] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u202, 8u202, jdk8-psu, 8-psu, jdk8, 8, latest  |
-| [jdk8u201]            | CPU   | frekele/debian:stable    | Production   | jdk8u201, 8u201, jdk8-cpu, 8-cpu                   |
+| [jdk8u212] - latest   | PSU   | frekele/debian:stable    | Production   | jdk8u212, 8u212, jdk8-psu, 8-psu, jdk8, 8, latest  |
+| [jdk8u211]            | CPU   | frekele/debian:stable    | Production   | jdk8u211, 8u211, jdk8-cpu, 8-cpu                   |
+| [jdk8u202]            | PSU   | frekele/debian:stable    | Production   | jdk8u202, 8u202                                    |
+| [jdk8u201]            | CPU   | frekele/debian:stable    | Production   | jdk8u201, 8u201                                    |
 | [jdk8u181]            | CPU   | frekele/debian:stable    | Production   | jdk8u181, 8u181                                    |
 | [jdk8u172]            | PSU   | frekele/debian:stable    | Production   | jdk8u172, 8u172                                    |
 | [jdk8u171]            | CPU   | frekele/debian:stable    | Production   | jdk8u171, 8u171                                    |
@@ -129,6 +131,8 @@ frekele/docker-java is **licensed** under the **[MIT License]**. The terms of th
 [Oracle JDK 8 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/documentation/8u-relnotes-2225394.html
 [Oracle JDK 7 Update Release Notes]: http://www.oracle.com/technetwork/java/javase/7u-relnotes-515228.html
 
+[jdk8u212]: https://github.com/frekele/docker-java/blob/jdk8u212/Dockerfile
+[jdk8u211]: https://github.com/frekele/docker-java/blob/jdk8u211/Dockerfile
 [jdk8u202]: https://github.com/frekele/docker-java/blob/jdk8u202/Dockerfile
 [jdk8u201]: https://github.com/frekele/docker-java/blob/jdk8u201/Dockerfile
 [jdk8u181]: https://github.com/frekele/docker-java/blob/jdk8u181/Dockerfile
